@@ -19,6 +19,9 @@ mongoose
   .catch((err) => console.log(err.message));
 
 
+app.get("/",(req, res)=>{
+  res.send("<h2>Welcome to backend of Bank Auth</h2>")
+})
 app.use("/api/auth", authRoutes)
 
 
